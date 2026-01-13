@@ -17,7 +17,7 @@ const allEvents = [
     duration: "7 hours",
     category: "Competitive Event",
     attendees: 200,
-    image: "/img.jpg",
+    image: "/img4.jpeg",
     description: "A competitive event that tests your skills in web development, coding, and problem-solving.",
     isPast: true,
     fullDescription:
@@ -29,7 +29,7 @@ const allEvents = [
       { time: "4:00 PM - 5:00 PM", topic: "Round 3" },
       { time: "5:00 PM - 6:00 PM", topic: "Closing Ceremony" },
     ],
-    gallery: ["/img.jpg", "/img.jpg"],
+    gallery: ["/img1.jpeg", "/img4.jpeg"],
     registrationLink: "#",
   },
   {
@@ -40,7 +40,7 @@ const allEvents = [
     location: "To be announced",
     category: "Career Fair",
     attendees: 1000,
-    image: "/img.jpg",
+    image: "/img1.jpeg",
     description: "A career fair that connects students with companies for internships and full-time opportunities.",
     isPast: false,
     fullDescription:
@@ -52,7 +52,7 @@ const allEvents = [
     //   { time: "12:30 PM - 1:00 PM", topic: "Round 3" },
     //   { time: "1:00 PM - 1:30 PM", topic: "Closing Ceremony" },
     // ],
-    gallery: ["/img.jpg", "/img.jpg"],
+    gallery: ["/img1.jpeg", "/img2.jpeg"],
     registrationLink: "#",
   },
   {
@@ -63,12 +63,12 @@ const allEvents = [
     location: "To be announced",
     category: "Hackathon Event",
     attendees: 100,
-    image: "/img.jpg",
+    image: "/img2.jpeg",
     description: "A hackathon event that tests your skills in coding, problem-solving, and creativity.",
     isPast: false,
     fullDescription:
       "Line of Code(LOC) 2026 is a hackathon event that tests your skills in coding, problem-solving, and creativity. The theme of the event is 'F1'. It is a great opportunity to showcase your skills and win exciting prizes.",
-    gallery: ["/img.jpg", "/img.jpg"],
+    gallery: ["/img2.jpg", "/img1.jpeg"],
     registrationLink: "#",
   }
 ]

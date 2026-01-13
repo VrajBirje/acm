@@ -23,7 +23,7 @@ const carouselSlides: CarouselSlide[] = [
     description: "Become part of a global community of computing professionals and students. Access resources, mentorship, and career opportunities.",
     buttonText: "Become Member",
     buttonLink: "/membership",
-    backgroundImage: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    backgroundImage: "img1.jpeg"
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const carouselSlides: CarouselSlide[] = [
     description: "Hands-on sessions on AI/ML, Web Development, Cybersecurity, and more. Learn from experienced mentors.",
     buttonText: "View Workshops",
     buttonLink: "/workshops",
-    backgroundImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    backgroundImage: "img2.jpeg"
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const carouselSlides: CarouselSlide[] = [
     description: "Participate in hackathons, coding contests, and problem-solving sessions throughout the year.",
     buttonText: "Join Competition",
     buttonLink: "/events",
-    backgroundImage: "https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    backgroundImage: "img1.jpeg"
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const carouselSlides: CarouselSlide[] = [
     description: "Collaborate on research projects, publish papers, and present at conferences with faculty guidance.",
     buttonText: "Explore Projects",
     buttonLink: "/research",
-    backgroundImage: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    backgroundImage: "/img4.jpeg"
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const carouselSlides: CarouselSlide[] = [
     description: "Get career guidance, interview preparation, and connect with industry partners and alumni.",
     buttonText: "Career Resources",
     buttonLink: "/career",
-    backgroundImage: "https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    backgroundImage: "img5.jpeg"
   }
 ]
 

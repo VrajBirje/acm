@@ -223,7 +223,7 @@ const teamMembers = [
   },
   {
     id: 25,
-    name: "abc",
+    name: "Vedant Khade",
     role: "Former Chairperson",
     category: "alumni",
     bio: "Led ACM chapter for 1 year. Currently working as Senior Software Engineer.",

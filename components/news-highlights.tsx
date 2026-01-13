@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
@@ -75,23 +76,25 @@ export default function NewsHighlights() {
           className="grid md:grid-cols-3 gap-8"
         >
           {news.map((item) => (
-            <motion.div key={item.id} variants={itemVariants} className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg mb-4 h-48">
-                <Image
-                  src={item.image || "/img.jpg"}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <span className="text-xs font-semibold text-accent uppercase tracking-wide">{item.category}</span>
-              <p className="text-sm text-muted-foreground mt-1">{item.date}</p>
-              <h3 className="text-xl font-bold mt-2 group-hover:text-accent transition-colors">{item.title}</h3>
-              <p className="text-muted-foreground mt-2 line-clamp-2">{item.excerpt}</p>
-              <Button variant="link" className="mt-4 p-0 text-accent hover:text-accent/80">
-                Read More →
-              </Button>
-            </motion.div>
+            <Link key={item.id} href={`/news/${item.id}`}>
+              <motion.div variants={itemVariants} className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-lg mb-4 h-48">
+                  <Image
+                    src={item.image || "/img.jpg"}
+                    alt={item.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <span className="text-xs font-semibold text-accent uppercase tracking-wide">{item.category}</span>
+                <p className="text-sm text-muted-foreground mt-1">{item.date}</p>
+                <h3 className="text-xl font-bold mt-2 group-hover:text-accent transition-colors">{item.title}</h3>
+                <p className="text-muted-foreground mt-2 line-clamp-2">{item.excerpt}</p>
+                <Button variant="link" className="mt-4 p-0 text-accent hover:text-accent/80">
+                  Read More →
+                </Button>
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
 
@@ -102,8 +105,8 @@ export default function NewsHighlights() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center mt-12"
         >
-          <Button size="lg" className="bg-accent hover:bg-accent/90">
-            View All News
+          <Button size="lg" className="bg-accent hover:bg-accent/90" asChild>
+            <Link href="/news">View All News</Link>
           </Button>
         </motion.div>
       </div>

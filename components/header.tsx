@@ -12,6 +12,7 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/team", label: "Our Team" },
     { href: "/events", label: "Events" },
+    { href: "/news", label: "News" },
     { href: "/blogs", label: "Blogs" },
     { href: "/resources", label: "Resources" },
   ]
@@ -21,8 +22,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link style={{height:"100%"}} href="/" className="flex items-center space-x-2">
-            <img style={{height:"100%"}} src="/logo2.png" alt="" />
+          <Link style={{ height: "100%" }} href="/" className="flex items-center space-x-2">
+            <img style={{ height: "100%" }} src="/logo2.png" alt="" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,9 +41,11 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden sm:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
-              Join Us
-            </Button>
+            <Link href="/contact">
+              <Button variant="outline" size="sm" className="w-full bg-transparent">
+                Join Us
+              </Button>
+            </Link>
             <Button size="sm" className="bg-accent hover:bg-accent/90">
               Donate
             </Button>
@@ -67,9 +70,11 @@ export default function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 px-4 pt-2">
-              <Button variant="outline" size="sm" className="w-full bg-transparent">
-                Join Us
-              </Button>
+              <Link href="/contact" className="w-full" onClick={() => setIsOpen(false)}>
+                <Button variant="outline" size="sm" className="w-full bg-transparent">
+                  Join Us
+                </Button>
+              </Link>
               <Button size="sm" className="w-full bg-accent hover:bg-accent/90">
                 Donate
               </Button>
