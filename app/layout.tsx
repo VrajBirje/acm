@@ -11,11 +11,11 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "ACM Chapter | D J. Sanghvi College of Engineering",
   description:
-    "ACM Chapter (Association for Computing Machinery) - Advancing computing as a science and profession. Join our community for events, workshops, and networking.",
+    "ACM Chapter (Association for Computing Machinery) of Dwarkadas J. Sanghvi College of Engineering - Advancing computing as a science and profession. Join our community for events, workshops, and networking.",
   generator: "vraj birje",
   openGraph: {
-    title: "ACM Chapter",
-    description: "Advancing computing as a science and profession",
+    title: "ACM Chapter | D J. Sanghvi College of Engineering",
+    description: "ACM Chapter (Association for Computing Machinery) of Dwarkadas J. Sanghvi College of Engineering - Advancing computing as a science and profession. Join our community for events, workshops, and networking.",
     type: "website",
     url: "djsacm.in",
   },
