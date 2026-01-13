@@ -112,8 +112,8 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
 
         {/* Hero Image */}
         <div className="relative h-96 rounded-lg overflow-hidden mb-8">
-          <Image src={event.image || "/placeholder.svg"} alt={event.title} fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          <Image src={event.image || "/img.jpg"} alt={event.title} fill className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <div className="flex gap-2 mb-3">
               <span className="px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full">
@@ -125,7 +125,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                 </span>
               )}
             </div>
-            <h1 className="text-4xl font-bold text-white">{event.title}</h1>
+            <h1 className="text-4xl font-bold text-card">{event.title}</h1>
           </div>
         </div>
 
@@ -189,7 +189,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                   {event.gallery.map((image, index) => (
                     <div key={index} className="relative h-40 rounded overflow-hidden">
                       <Image
-                        src={image || "/placeholder.svg"}
+                        src={image || "/img.jpg"}
                         alt={`Gallery ${index + 1}`}
                         fill
                         className="object-cover hover:scale-110 transition-transform duration-300 cursor-pointer"

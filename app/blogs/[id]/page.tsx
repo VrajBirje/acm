@@ -124,8 +124,8 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
         {/* Hero Image */}
         <div className="relative h-96 rounded-lg overflow-hidden mb-8">
-          <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          <Image src={post.image || "/img.jpg"} alt={post.title} fill className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
         </div>
 
         {/* Header */}
@@ -207,7 +207,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   <div className="group bg-card rounded-lg overflow-hidden border border-border hover:border-accent transition-all duration-300">
                     <div className="relative h-40 overflow-hidden">
                       <Image
-                        src={relatedPost.image || "/placeholder.svg"}
+                        src={relatedPost.image || "/img.jpg"}
                         alt={relatedPost.title}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-300"

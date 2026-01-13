@@ -137,7 +137,7 @@ export default function BlogsPage() {
             >
               <div className="relative h-48 overflow-hidden bg-muted">
                 <Image
-                  src={post.image || "/placeholder.svg"}
+                  src={post.image || "/img.jpg"}
                   alt={post.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

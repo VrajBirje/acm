@@ -108,7 +108,7 @@ export default function EventsList({ showPast }: EventsListProps) {
           {/* Event Image */}
           <div className="relative w-full md:w-64 h-64 md:h-auto flex-shrink-0 overflow-hidden bg-muted">
             <Image
-              src={event.image || "/placeholder.svg"}
+              src={event.image || "/img.jpg"}
               alt={event.title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-300"

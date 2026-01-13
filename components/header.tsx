@@ -21,11 +21,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">ACM</span>
-            </div>
-            <span className="hidden sm:inline font-bold text-lg">ACM Chapter</span>
+          <Link style={{height:"100%"}} href="/" className="flex items-center space-x-2">
+            <img style={{height:"100%"}} src="/logo2.png" alt="" />
           </Link>
 
           {/* Desktop Navigation */}

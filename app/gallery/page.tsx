@@ -102,13 +102,13 @@ export default function GalleryPage() {
               className="group relative h-48 rounded-lg overflow-hidden cursor-pointer bg-muted"
             >
               <Image
-                src={img.image || "/placeholder.svg"}
+                src={img.image || "/img.jpg"}
                 alt={img.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                <p className="text-white text-sm font-medium">{img.title}</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                <p className="text-card text-sm font-medium">{img.title}</p>
               </div>
             </motion.div>
           ))}
@@ -128,7 +128,7 @@ export default function GalleryPage() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setSelectedImage(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/90 p-4"
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -139,7 +139,7 @@ export default function GalleryPage() {
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-8 -right-8 text-white hover:text-accent transition-colors"
+              className="absolute -top-8 -right-8 text-card hover:text-accent transition-colors"
               aria-label="Close"
             >
               <X className="w-6 h-6" />
@@ -147,7 +147,7 @@ export default function GalleryPage() {
 
             <div className="relative h-96 md:h-screen md:max-h-96 rounded-lg overflow-hidden">
               <Image
-                src={selectedImage.image || "/placeholder.svg"}
+                src={selectedImage.image || "/img.jpg"}
                 alt={selectedImage.title}
                 fill
                 className="object-contain"
@@ -155,8 +155,8 @@ export default function GalleryPage() {
             </div>
 
             <div className="mt-4 text-center">
-              <p className="text-white font-semibold">{selectedImage.title}</p>
-              <p className="text-gray-400 text-sm capitalize">{selectedImage.category}</p>
+              <p className="text-card font-semibold">{selectedImage.title}</p>
+              <p className="text-muted-foreground text-sm capitalize">{selectedImage.category}</p>
             </div>
           </motion.div>
         </motion.div>

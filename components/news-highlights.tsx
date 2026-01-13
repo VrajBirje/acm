@@ -78,7 +78,7 @@ export default function NewsHighlights() {
             <motion.div key={item.id} variants={itemVariants} className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-lg mb-4 h-48">
                 <Image
-                  src={item.image || "/placeholder.svg"}
+                  src={item.image || "/img.jpg"}
                   alt={item.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
