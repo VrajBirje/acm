@@ -9,7 +9,7 @@ const teamMembers = [
     id: 1,
     name: "Meghana Basrur",
     role: "Chairperson",
-    category: "core",
+    category: "upper core",
     bio: "Leading ACM with vision and dedication, fostering innovation and collaboration in the computing community.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "meghana@acm.org" },
@@ -18,7 +18,7 @@ const teamMembers = [
     id: 2,
     name: "Adit Mehta",
     role: "Co-Chairperson",
-    category: "core",
+    category: "upper core",
     bio: "Driving strategic initiatives and building bridges between students, faculty, and industry partners.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "adit@acm.org" },
@@ -27,7 +27,7 @@ const teamMembers = [
     id: 3,
     name: "Nitya Ruparel",
     role: "Secretary",
-    category: "core",
+    category: "upper core",
     bio: "Ensuring smooth operations and effective communication across all ACM activities and initiatives.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "nitya@acm.org" },
@@ -36,7 +36,7 @@ const teamMembers = [
     id: 4,
     name: "Rishi Mehta",
     role: "Treasurer",
-    category: "core",
+    category: "upper core",
     bio: "Managing financial resources and budgets to support ACM's mission and community programs.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "rishi@acm.org" },
@@ -45,7 +45,7 @@ const teamMembers = [
     id: 5,
     name: "Hardik Shah",
     role: "Admin",
-    category: "core",
+    category: "upper core",
     bio: "Overseeing administrative functions and ensuring efficient day-to-day operations of ACM.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "hardik@acm.org" },
@@ -54,7 +54,7 @@ const teamMembers = [
     id: 6,
     name: "Kashissh",
     role: "Admin",
-    category: "core",
+    category: "upper core",
     bio: "Supporting administrative needs and maintaining organizational structure for ACM activities.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "kashissh@acm.org" },
@@ -153,7 +153,7 @@ const teamMembers = [
     id: 17,
     name: "Vraj Birje",
     role: "VCP Infotech",
-    category: "tech",
+    category: "core",
     bio: "Managing IT infrastructure and developing technological solutions to support ACM's digital presence.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "vraj@acm.org" },
@@ -162,7 +162,7 @@ const teamMembers = [
     id: 18,
     name: "Kimaya Chavan",
     role: "VCP Technical",
-    category: "tech",
+    category: "core",
     bio: "Leading technical initiatives and fostering innovation in software development and emerging technologies.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "kimaya@acm.org" },
@@ -171,7 +171,7 @@ const teamMembers = [
     id: 19,
     name: "Ishaan Seth",
     role: "VCP Research",
-    category: "tech",
+    category: "core",
     bio: "Promoting research excellence and facilitating academic collaboration in computing sciences.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "ishaan@acm.org" },
@@ -180,7 +180,7 @@ const teamMembers = [
     id: 20,
     name: "Ankur",
     role: "VCP Research",
-    category: "tech",
+    category: "core",
     bio: "Advancing research initiatives and supporting students in their academic and research pursuits.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "ankur@acm.org" },
@@ -189,7 +189,7 @@ const teamMembers = [
     id: 21,
     name: "Pearl Mody",
     role: "VCP Research",
-    category: "tech",
+    category: "core",
     bio: "Fostering a culture of innovation and research excellence within the ACM community.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "pearl@acm.org" },
@@ -198,7 +198,7 @@ const teamMembers = [
     id: 22,
     name: "Akarshit",
     role: "VCP Research",
-    category: "tech",
+    category: "core",
     bio: "Leading research projects and connecting students with opportunities in cutting-edge computing research.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "akarshit@acm.org" },
@@ -207,7 +207,7 @@ const teamMembers = [
     id: 23,
     name: "Rishit Kar",
     role: "VCP Research",
-    category: "tech",
+    category: "core",
     bio: "Driving research initiatives and promoting academic excellence in computer science and technology.",
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "rishit@acm.org" },
@@ -230,7 +230,6 @@ const teamMembers = [
     image: "/img.jpg",
     social: { github: "#", linkedin: "#", email: "rajesh@acm.org" },
   },
-  
 ]
 
 interface TeamGridProps {
@@ -238,8 +237,13 @@ interface TeamGridProps {
 }
 
 export default function TeamGrid({ selectedFilter }: TeamGridProps) {
-  const filteredMembers =
-    selectedFilter === "all" ? teamMembers : teamMembers.filter((member) => member.category === selectedFilter)
+  // Filter logic based on selected filter
+  const filteredMembers = teamMembers.filter((member) => {
+    if (selectedFilter === "all") return true
+    if (selectedFilter === "core") return member.category === "upper core"
+    if (selectedFilter === "alumni") return member.category === "alumni"
+    return true
+  })
 
   const containerVariants = {
     hidden: { opacity: 0 },

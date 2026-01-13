@@ -2,10 +2,10 @@
 
 import { Button } from "@/components/ui/button"
 
+// Updated to only have 3 filters
 const filters = [
   { id: "all", label: "All Members" },
   { id: "core", label: "Core Team" },
-  { id: "tech", label: "Tech Leads" },
   { id: "alumni", label: "Alumni" },
 ]
 
