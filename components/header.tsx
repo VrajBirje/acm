@@ -12,8 +12,9 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/team", label: "Our Team" },
     { href: "/events", label: "Events" },
-    { href: "/news", label: "News" },
-    { href: "/blogs", label: "Blogs" },
+    { href: "/publications", label: "Publications" },
+    // { href: "/news", label: "News" },
+    // { href: "/blogs", label: "Blogs" },
     { href: "/resources", label: "Resources" },
   ]
 

@@ -199,7 +199,7 @@ const teamMembers = [
     role: "VCP Publicity",
     category: "core",
     bio: "Building public awareness and promoting ACM's initiatives across various platforms and channels.",
-    image: "/siaa.heif",
+    image: "/sia.png",
     social: {
       github: "#",
       linkedin: "https://www.linkedin.com/in/siaa-shah-84a707292",
