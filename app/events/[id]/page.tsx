@@ -17,7 +17,7 @@ const allEvents = [
     duration: "7 hours",
     category: "Competitive Event",
     attendees: 200,
-    image: "/img4.jpeg",
+    image: "/digihunt.jpeg",
     description: "A competitive event that tests your skills in web development, coding, and problem-solving.",
     isPast: true,
     fullDescription:
