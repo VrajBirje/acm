@@ -9,37 +9,26 @@ import { Download, ExternalLink } from "lucide-react"
 const publications = [
   {
     id: 1,
-    title: "The Evolution of Computing Architecture in 2024",
-    authors: ["Sarah Chen", "James Miller"],
-    year: 2024,
+    title: "Curriculum Based Adversarial attack detection in Extended 5G/6G networks",
+    authors: ["Megh Desai", "Ishaan Sheth"],
+    year: 2026,
     type: "Research Paper",
-    description: "A comprehensive study of modern computing architectures and their impact on software development.",
-    pdf: "#",
+    description: "Testing curriculum based learning in ml model to detect attacks and increase accuracy for iot led extended 5g and 6g devices",
+    pdf: "https://docs.google.com/presentation/d/1Oz_4aLVmhDuxMCuH-UQbr23-fNUMgVNymFravXLXUCk/edit?usp=sharing",
     abstract:
-      "This paper examines the latest trends in computing architecture, including quantum computing, edge computing, and distributed systems.",
+      "We try to use curriculum learning to train the model and increase its effectiveness in classification of normal and attack vectors for safety of network.",
   },
   {
     id: 2,
-    title: "Open Source Best Practices: A Community Perspective",
-    authors: ["Priya Patel", "Alex Rodriguez"],
-    year: 2024,
-    type: "Technical Report",
-    description: "Guidelines and best practices for contributing to and maintaining open source projects.",
-    pdf: "#",
+    title: "A Survey on Mitigation Strategies for Catastrophic Forgetting in Reinforcement Learning Agents",
+    authors: ["Darshan Davda", "Ishaan Sheth"],
+    year: 2026,
+    type: "Research Paper",
+    description: "Primary Domain :Machine Learning(Reinforcement Learning). Secondary Domain: Lifelong Learning. My paper targets Catastrophic forgetting, as environments change or new tasks appear, the agent often forgets previously learned skills. This issue is known as Catastrophic Forgetting, and it limits the development of lifelong learning RL systems.",
+    pdf: "https://docs.google.com/presentation/d/1x4tXLYcOKhY9IVG4_Uv-E33gPho4pJuZ1dpRMMzC4Fs/edit?usp=sharing",
     abstract:
-      "We analyze successful open source communities and extract key practices that lead to sustainable project growth and quality.",
-  },
-  {
-    id: 3,
-    title: "Sustainable Software: Building for the Future",
-    authors: ["Emma Thompson", "Michael Lee"],
-    year: 2023,
-    type: "Position Paper",
-    description: "A discussion on building sustainable and maintainable software systems.",
-    pdf: "#",
-    abstract:
-      "This paper explores the principles of sustainable software development and how to build systems that can adapt to future challenges.",
-  },
+      "Primary Domain :Machine Learning(Reinforcement Learning). Secondary Domain: Lifelong Learning.",
+  }
 ]
 
 const containerVariants = {

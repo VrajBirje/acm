@@ -11,17 +11,25 @@ const teamMembers = [
     role: "Chairperson",
     category: "upper core",
     bio: "Leading ACM with vision and dedication, fostering innovation and collaboration in the computing community.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "meghana@acm.org" },
+    image: "/meghana.png",
+    social: {
+      github: "https://github.com/megbasrur",
+      linkedin: "https://www.linkedin.com/in/meghanabasrur",
+      email: "megbasrur@gmail.com"
+    },
   },
   {
     id: 2,
-    name: "Adit Mehta",
+    name: "Aadit Mehta",
     role: "Co-Chairperson",
     category: "upper core",
     bio: "Driving strategic initiatives and building bridges between students, faculty, and industry partners.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "adit@acm.org" },
+    image: "/adit.jpeg",
+    social: {
+      github: "https://github.com/git-aaditmehta",
+      linkedin: "https://www.linkedin.com/in/aadit-mehta",
+      email: "aaditmehta15@gmail.com"
+    },
   },
   {
     id: 3,
@@ -29,53 +37,70 @@ const teamMembers = [
     role: "Secretary",
     category: "upper core",
     bio: "Ensuring smooth operations and effective communication across all ACM activities and initiatives.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "nitya@acm.org" },
+    image: "/nitya.jpg",
+    social: {
+      github: "https://github.com/nityawastaken",
+      linkedin: "https://www.linkedin.com/in/nityaruparel/",
+      email: "ruparelnitya@gmail.com"
+    },
   },
   {
     id: 4,
-    name: "Rishi Mehta",
+    name: "Rishi Tejas Mehta",
     role: "Treasurer",
     category: "upper core",
     bio: "Managing financial resources and budgets to support ACM's mission and community programs.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "rishi@acm.org" },
+    image: "/rishi.png",
+    social: {
+      github: "https://github.com/RishiMehtaa",
+      linkedin: "https://www.linkedin.com/in/rishimehta1607",
+      email: "rishimehta1607@gmail.com"
+    },
   },
   {
     id: 5,
-    name: "Hardik Shah",
+    name: "Hardik Parag Shah",
     role: "Admin",
     category: "upper core",
     bio: "Overseeing administrative functions and ensuring efficient day-to-day operations of ACM.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "hardik@acm.org" },
+    image: "/hardik.png",
+    social: {
+      github: "https://github.com/HPS170405",
+      linkedin: "https://www.linkedin.com/in/hardik-shah-885230294/",
+      email: "hardikpshah20@gmail.com"
+    },
   },
   {
     id: 6,
-    name: "Kashissh",
+    name: "Kashissh Agrawal",
     role: "Admin",
     category: "upper core",
     bio: "Supporting administrative needs and maintaining organizational structure for ACM activities.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "kashissh@acm.org" },
+    image: "/kashissh.jpeg",
+    social: {
+      github: "#",
+      linkedin: "http://linkedin.com/in/kashissh-agrawal",
+      email: "kashisshagrawal@gmail.com"
+    },
   },
-  {
-    id: 7,
-    name: "Anvi Phadke",
-    role: "Vice Chairperson Editorial",
-    category: "core",
-    bio: "Leading editorial initiatives and content creation to showcase ACM's achievements and insights.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "anvi@acm.org" },
-  },
+  { id: 7, name: "Anvi Phadke", 
+    role: "Vice Chairperson Editorial", 
+    category: "core", 
+    bio: "Leading editorial initiatives and content creation to showcase ACM's achievements and insights.", 
+    image: "/img.jpg", 
+    social: { github: "#", linkedin: "#", email: "anvi@acm.org" }, },
   {
     id: 8,
     name: "Yash Kehalkar",
     role: "VCP Editorial",
     category: "core",
     bio: "Crafting compelling narratives and managing editorial content for ACM publications and communications.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "yash@acm.org" },
+    image: "/yash.jpg",
+    social: {
+      github: "https://www.github.com/yashkehalkar2412",
+      linkedin: "https://www.linkedin.com/in/yash-kehalkar-45498535b",
+      email: "yashkehalkar54@gmail.com"
+    },
   },
   {
     id: 9,
@@ -83,8 +108,12 @@ const teamMembers = [
     role: "VCP Events",
     category: "core",
     bio: "Organizing engaging workshops, hackathons, and networking events to connect the computing community.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "ansh@acm.org" },
+    image: "/ansh.jpeg",
+    social: {
+      github: "https://github.com/anshsaboo",
+      linkedin: "https://www.linkedin.com/in/ansh-saboo-400942288",
+      email: "anshsaboo@gmail.com"
+    },
   },
   {
     id: 10,
@@ -92,8 +121,12 @@ const teamMembers = [
     role: "VCP Events",
     category: "core",
     bio: "Creating memorable experiences through innovative event planning and community engagement initiatives.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "hriday@acm.org" },
+    image: "/hriday.png",
+    social: {
+      github: "#",
+      linkedin: "https://www.linkedin.com/in/hriday-sanghvi-38a80221a",
+      email: "hriday2125@gmail.com"
+    },
   },
   {
     id: 11,
@@ -101,8 +134,12 @@ const teamMembers = [
     role: "VCP Marketing",
     category: "core",
     bio: "Building ACM's brand presence and expanding outreach through strategic marketing campaigns.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "deep@acm.org" },
+    image: "/deep.jpg",
+    social: {
+      github: "https://github.com/deeprathod-18",
+      linkedin: "https://in.linkedin.com/in/deep-rathod-8b9917237",
+      email: "dhprathod02@gmail.com"
+    },
   },
   {
     id: 12,
@@ -110,8 +147,12 @@ const teamMembers = [
     role: "VCP Marketing",
     category: "core",
     bio: "Driving awareness and engagement through creative marketing strategies and digital presence.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "anushree@acm.org" },
+    image: "/anushree.jpeg",
+    social: {
+      github: "https://github.com/Anushre2005",
+      linkedin: "https://www.linkedin.com/in/anushree-revankar/",
+      email: "anushree.revankar102@gmail.com"
+    },
   },
   {
     id: 13,
@@ -119,8 +160,12 @@ const teamMembers = [
     role: "VCP Creatives",
     category: "core",
     bio: "Designing visually stunning content and creative assets that bring ACM's vision to life.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "jeel@acm.org" },
+    image: "/jeel.jpeg",
+    social: {
+      github: "https://github.com/jeel",
+      linkedin: "https://linkedin.com/in/jeel",
+      email: "Shahjeel1310@gmail.com"
+    },
   },
   {
     id: 14,
@@ -128,17 +173,25 @@ const teamMembers = [
     role: "VCP Creatives",
     category: "core",
     bio: "Leading creative direction and visual storytelling to enhance ACM's communication and branding.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "prisha@acm.org" },
+    image: "/prisha.jpeg",
+    social: {
+      github: "https://github.com/prishaadesai",
+      linkedin: "https://www.linkedin.com/in/prishadesai31/",
+      email: "Prishadesai2005@gmail.com"
+    },
   },
   {
     id: 15,
-    name: "Vaibhav Gala",
+    name: "Vaibhav Anand Gala",
     role: "VCP Publicity",
     category: "core",
     bio: "Amplifying ACM's message and achievements through strategic publicity and media relations.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "vaibhav@acm.org" },
+    image: "/vaibhav.jpg",
+    social: {
+      github: "https://github.com/vaibhavGala262",
+      linkedin: "https://www.linkedin.com/in/vaibhav-gala-a39029280",
+      email: "vaibhavgala262@gmail.com"
+    },
   },
   {
     id: 16,
@@ -146,8 +199,12 @@ const teamMembers = [
     role: "VCP Publicity",
     category: "core",
     bio: "Building public awareness and promoting ACM's initiatives across various platforms and channels.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "siaa@acm.org" },
+    image: "/siaa.heif",
+    social: {
+      github: "#",
+      linkedin: "https://www.linkedin.com/in/siaa-shah-84a707292",
+      email: "siaashah2006@gmail.com"
+    },
   },
   {
     id: 17,
@@ -155,17 +212,21 @@ const teamMembers = [
     role: "VCP Infotech",
     category: "core",
     bio: "Managing IT infrastructure and developing technological solutions to support ACM's digital presence.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "vraj@acm.org" },
+    image: "/vraj.JPG",
+    social: { github: "github.com/vrajbirje", linkedin: "https://www.linkedin.com/in/vraj-birje-168129263/", email: "vrajbirje0309@gmail.com" },
   },
   {
     id: 18,
-    name: "Kimaya Chavan",
+    name: "Kimaya Shrikant Chavan",
     role: "VCP Technical",
     category: "core",
     bio: "Leading technical initiatives and fostering innovation in software development and emerging technologies.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "kimaya@acm.org" },
+    image: "/kimaya.png",
+    social: {
+      github: "https://github.com/kimiko-11",
+      linkedin: "https://linkedin.com/in/kimaya-chavan",
+      email: "hellokimaya@gmail.com"
+    },
   },
   {
     id: 19,
@@ -218,8 +279,8 @@ const teamMembers = [
     role: "VCP Operations",
     category: "core",
     bio: "Ensuring seamless operations and coordinating logistics for all ACM activities and programs.",
-    image: "/img.jpg",
-    social: { github: "#", linkedin: "#", email: "abdul@acm.org" },
+    image: "/abdul.jpeg",
+    social: { github: "https://github.com/abdulhusa", linkedin: "https://www.linkedin.com/in/abdulhusain-dahodwala-3a0bba253", email: "abdulhusaindahodwala@gmail.com" },
   },
   {
     id: 25,
